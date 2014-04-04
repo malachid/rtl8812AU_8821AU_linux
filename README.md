@@ -9,8 +9,9 @@ From http://askubuntu.com/questions/368015/problem-with-building-compiling-a-dri
 Whenever a new kernel version is installed, reboot then:
 
 ```
-make clean
-make
+sudo make clean
+sudo make
 sudo make install
 sudo modprobe 8812au
 ```
+you may have to sudo apt-get install linux-headers-`uname -r`
